@@ -2,19 +2,31 @@
 This is a simple, in PHP written, Generator of Minecraft Achievements for your website or blog.
 
 ## Features
-TBA
+* Create unique Achievements in Minecraft-style
+* Many often-used icons from the game
+* Simple & Responsive Design
+* Copy & Paste links for websites and forums
+* Download & share your personal Achievements
+* Supports Google Chrome's "Web-App" feature for Android
+* Simple setup
+* Open-Source
 
 ## Examples & Screenshots
-TBA
+
+### Examples
+![Achievement 1](doc/achievement1.png)
+![Achievement 2](doc/achievement2.png)
+
+### Screenshots
+![Screenshot 1](doc/screenshot1.png)
+![Screenshot 2](doc/screenshot2.png)
 
 ## Installation
-TBA
-
-### Requirements
-TBA
-
-### Configuration
-TBA
+The installation is very simple and you only need a webserver with PHP-support:
+* Download a [ZIP archive](https://github.com/MarvinMenzerath/MinecraftAchievementGenerator/archive/master.zip) containing all the files and extract it.
+* Copy every file (maybe except the `doc`-directory) to your webserver.
+* Edit the `config.php`-file according to your needs and save it.
+* That's it. You're done!
 
 ## License
 Copyright (C) Generator 2012-2014 [Marvin Menzerath](http://menzerath.eu)  

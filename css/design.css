@@ -1,0 +1,155 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+
+body {
+	background: url(bg.png) repeat;
+	font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	background: #fff;
+	border-radius: 2px;
+	margin: 0 auto;
+	padding: 1em 1.5em;
+	text-align: left;
+	width: 43em;
+}
+
+#headText {
+	border-bottom: 1px dotted #ccc;
+}
+
+#headText p {
+	line-height: 110%;
+	padding-bottom: .5em;
+}
+
+#form {
+	float: left;
+	padding: .5em 0 .5em 0;
+	width: 100%;
+}
+
+#output {
+	padding-top: .5em;
+}
+
+#achievement {
+	cursor: pointer;
+	padding-bottom:.3em;
+}
+
+#links {
+	border-top: 1px dotted #ccc;
+	padding-top: .5em;
+}
+
+#footer {
+	clear: both;
+	color: #999999;
+	font-size: 72%;
+	padding-top: .5em;
+	text-align: center;
+	width: 100%;
+}
+
+#footer a {
+	color: #999999;
+	border-bottom: 1px dotted #999999;
+}
+
+a {
+	color: #0000ee;
+	text-decoration: none;
+}
+
+p {
+	margin: 0;
+}
+
+img {
+	border: none;
+}
+
+img.logo {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+li {
+	font-weight: 700;
+	padding-top: .3em;
+}
+
+input {
+	width: 99%;
+}
+
+select {
+	width: 100%;
+}
+
+input[type="submit"] {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.1em;
+	font-weight: 700;
+	width: 100%;
+}
+
+label.description {
+	border: none;
+	color: #222;
+	display: block;
+	font-weight: 700;
+}
+
+input.text {
+	border: 1px solid #c3c3c3;
+	color: #333;
+	margin: 0;
+}
+
+select.select {
+	border: 1px solid #c3c3c3;
+	color: #333;
+}
+
+@media only screen and (max-width: 49em) {
+	#container {
+		padding: .8em 1.3em;
+		width: 20em;
+	}
+
+	#form {
+		float: none;
+		width: 100%;
+	}
+
+	img.logo {
+		display: none;
+	}
+
+	input {
+		width: 99%;
+	}
+
+	select {
+		width: 100%;
+	}
+
+	input[type="submit"] {
+		width: 100%;
+	}
+}
