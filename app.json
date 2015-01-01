@@ -8,6 +8,6 @@
     "MAG-URL": {
       "description": "The full URL to this instance of MAG (should end with a slash)",
       "value": "https://mcgen.herokuapp.com/"
-    },
-  },
+    }
+  }
 }
