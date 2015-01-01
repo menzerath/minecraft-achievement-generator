@@ -1,0 +1,13 @@
+{
+  "name": "Minecraft Achievement Generator",
+  "description": "A simple, in PHP written, Generator of Minecraft Achievements for your website or blog.",
+  "repository": "https://github.com/MarvinMenzerath/MinecraftAchievementGenerator",
+  "logo": "https://raw.githubusercontent.com/MarvinMenzerath/MinecraftAchievementGenerator/master/css/favicon.png",
+  "keywords": ["PHP", "Minecraft", "Achievement"],
+  "env": {
+    "MAG-URL": {
+      "description": "The full URL to this instance of MAG (should end with a slash)",
+      "value": "https://mcgen.herokuapp.com/"
+    },
+  },
+}
