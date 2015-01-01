@@ -19,7 +19,7 @@ For a Minecraft Achievement Generator Demo click here: https://mcgen.herokuapp.c
 
 The installation is very simple and you only need a webserver with PHP-support:
 * Download a [ZIP archive](https://github.com/MarvinMenzerath/MinecraftAchievementGenerator/archive/master.zip) containing all the files and extract it.
-* Copy every file (maybe except the `doc`-directory) to your webserver.
+* Copy everything to your webserver.
 * Edit the `config.php`-file according to your needs and save it.
 * That's it. You're done!
 
