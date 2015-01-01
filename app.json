@@ -1,5 +1,5 @@
 {
-  "name": "Minecraft Achievement Generator",
+  "name": "Minecraft Achievement Gen.",
   "description": "A simple, in PHP written, Generator of Minecraft Achievements for your website or blog.",
   "repository": "https://github.com/MarvinMenzerath/MinecraftAchievementGenerator",
   "logo": "https://raw.githubusercontent.com/MarvinMenzerath/MinecraftAchievementGenerator/master/css/favicon.png",
