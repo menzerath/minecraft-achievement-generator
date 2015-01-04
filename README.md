@@ -20,12 +20,11 @@ For a Minecraft Achievement Generator Demo click here: https://mcgen.herokuapp.c
 The installation is very simple and you only need a webserver with PHP-support:
 * Download a [ZIP archive](https://github.com/MarvinMenzerath/MinecraftAchievementGenerator/archive/master.zip) containing all the files and extract it.
 * Copy everything to your webserver.
-* Edit the `config.php`-file according to your needs and save it.
 * That's it. You're done!
 
 ## License
-Copyright (C) Generator 2012-2014 [Marvin Menzerath](https://menzerath.eu)  
-Copyright (C) Images 2009-2014 [Mojang](https://mojang.com)
+Copyright (C) Generator 2012-2015 [Marvin Menzerath](https://menzerath.eu)  
+Copyright (C) Images 2009-2015 [Mojang](https://mojang.com)
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or any later version.
 

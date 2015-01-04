@@ -1,7 +1,7 @@
 <?php
-	require_once("config.php");
+	error_reporting(0);
 
-    // Build Result-Page
+	// build result-page
 	if ($_SERVER['REQUEST_METHOD'] == "POST") {
 		$i = urlencode($_POST['i']);
 		$h = urlencode($_POST['h']);
@@ -15,45 +15,50 @@
 <!DOCTYPE html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title><?php if (isset($extraTitle)) { echo $extraTitle.' - '; } ?><?=APPLICATION_NAME?></title>
-	<link rel="stylesheet" type="text/css" href="<?=HOST?>css/design.css" media="all">
+	<title><?php if (isset($extraTitle)) { echo $extraTitle.' - '; } ?>Minecraft Achievement Generator</title>
+	<link rel="stylesheet" type="text/css" href="css/design.css" media="all">
 	<meta name="viewport" content="width=device-width">
 	<meta name="mobile-web-app-capable" content="yes">
-	<link rel="shortcut icon" sizes="196x196" href="<?=HOST?>css/favicon.png">
-	<meta name="description" content="<?=META_DESC?>"/>
+	<link rel="shortcut icon" sizes="196x196" href="css/favicon.png">
+	<meta name="description" content="This is a free Minecraft Achievement Generator with many Icons for your website, forums, blogs, YouTube-Channels and much more!"/>
 </head>
 <body>
-	<h1><a href="<?=HOST?>"><img class="logo" src="<?=HOST?>css/logo.png" alt="<?=APPLICATION_NAME?>"/></a></h1>
+	<h1><a href="./"><img class="logo" src="css/logo.png" alt="Minecraft Achievement Generator"/></a></h1>
 	<div id="container">
 
-		<?php if (isset($url)) { // Show Result-Page ?>
+		<?php if (isset($url)) { // show result-page ?>
 
 			<div id="headText">
-				<p>Thanks for using this Minecraft Achievement Generator! <a href="<?=HOST?>">Create an other one?</a></p>
+				<p>Thanks for using this Minecraft Achievement Generator! <a href="./">Create an other one?</a></p>
 			</div>
 			<div id="output">
-				<script type="text/javascript">
-					function downloadImage() {
-						window.location.href="<?=HOST.$urlD?>";
-					}
-				</script>
-				<img id="achievement" src="<?=HOST.$urlD?>" onclick="downloadImage()" alt="Your Achievement"/>
+				<img id="achievement" src="<?=$url?>" onclick="downloadImage()" alt="Your Achievement"/>
 				<div id="links">
 					<ul>
-						<li>URL:<br /><input type="text" onmouseover="this.select()" value="<?=HOST.$url?>"></li>
-						<li>HTML-Code:<br /><input type="text" onmouseover="this.select()" value="&lt;a href=&quot;<?=HOST?>&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;<?=HOST.$url?>&quot; alt=&quot;Minecraft Achievement&quot; /&gt;&lt;/a&gt;"></li>
-						<li>BBCode (Forums):<br /><input type="text" onmouseover="this.select()" value="[url=<?=HOST?>][img]<?=HOST.$url?>[/img][/url]"></li>
+						<li>URL:<br /><input type="text" id="out-url" onmouseover="this.select()" value="Enable JavaScript to see this link..."></li>
+						<li>HTML-Code:<br /><input type="text" id="out-html" onmouseover="this.select()" value="Enable JavaScript to see this link..."></li>
+						<li>BBCode (Forums):<br /><input type="text" id="out-bb" onmouseover="this.select()" value="Enable JavaScript to see this link..."></li>
 					</ul>
 				</div>
 			</div>
 
-		<?php } else { // Show Generator-Page ?>
+			<script>
+				document.getElementById('out-url').value = window.location.href + '<?=$url?>';
+				document.getElementById('out-html').value = '<a href="' + window.location.href + '" target="_blank"><img src="' + window.location.href + '<?=$url?>' + '" alt="Minecraft Achievement" /></a>';
+				document.getElementById('out-bb').value = '[url=' + window.location.href + '][img]' + window.location.href + '<?=$url?>' + '[/img][/url]';
+
+				function downloadImage() {
+					window.location.href = window.location.href + "<?=$urlD?>";
+				}
+			</script>
+
+		<?php } else { // show generator-page ?>
 
 			<div id="headText">
 				<p>Create a free Minecraft Achievement in three simple steps:</p>
 			</div>
 			<div id="form">
-				<form method="post" action="<?=HOST?>">
+				<form method="post" action="./">
 					<ul>
 						<li>
 							<label class="description">1.) Yellow Title</label>
@@ -117,8 +122,8 @@
 		<?php } ?>
 
 		<div id="footer">
-			Powered by <a href="<?=APPLICATION_URL?>" target="_blank"><?=APPLICATION_NAME?></a> v<?=APPLICATION_VERSION?> | © Minecraft &amp; Images <a href="http://mojang.com" target="_blank">Mojang</a>
-        </div>
+			Powered by <a href="https://github.com/MarvinMenzerath/MinecraftAchievementGenerator" target="_blank">Minecraft Achievement Generator</a> v1.0.1 | © Minecraft &amp; Images <a href="http://mojang.com" target="_blank">Mojang</a>
+		</div>
 	</div>
 </body>
 </html>
