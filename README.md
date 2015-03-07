@@ -11,9 +11,6 @@ This is a simple, in PHP written, Generator of Minecraft Achievements for your w
 * Simple setup
 * Open-Source
 
-## Demo
-For a Minecraft Achievement Generator Demo click here: https://mcgen.herokuapp.com/.
-
 ## Installation
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/MarvinMenzerath/MinecraftAchievementGenerator)
 
