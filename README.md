@@ -12,15 +12,13 @@ This is a simple, in PHP written, Generator of Minecraft Achievements for your w
 * Open-Source
 
 ## Installation
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/MarvinMenzerath/MinecraftAchievementGenerator)
-
 The installation is very simple and you only need a webserver with PHP-support:
-* Download a [ZIP archive](https://github.com/MarvinMenzerath/MinecraftAchievementGenerator/archive/master.zip) containing all the files and extract it.
+* Download an [archive](https://github.com/menzerath/minecraft-achievement-generator/archive/refs/heads/master.zip) containing all the files and extract it.
 * Copy everything to your webserver.
 * That's it. You're done!
 
 ## License
-Copyright (C) Generator 2012-2015 [Marvin Menzerath](https://menzerath.eu)  
+Copyright (C) Generator 2012-2015 [Marvin Menzerath](https://github.com/menzerath)  
 Copyright (C) Images 2009-2015 [Mojang](https://mojang.com)
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or any later version.
