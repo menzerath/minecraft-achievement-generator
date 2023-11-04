@@ -1,6 +1,8 @@
 # Minecraft Achievement Generator
 This is a simple, in PHP written, Generator of Minecraft Achievements for your website or blog.
 
+For a more modern alternative have a look at https://github.com/menzerath/mcgen.
+
 ## Features
 * Create unique Achievements in Minecraft-style
 * Many often-used icons from the game
